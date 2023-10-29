@@ -11,7 +11,10 @@ header > div,
 nav > div {border-bottom: 1px solid #666;}
 footer > div {border-top: 1px solid #666;} 
 
-header > div > div {text-align: center; max-height: 5em;}
+div.sidecol,
+footer > div > div {padding: .5em 1em;} 
+
+header > div > div {text-align: center; max-height: 5em; padding: 3% 0% 0% 30%;}
 div.logo img {max-height: 50px;} 
 
 article > div.content {display: grid; grid-template-columns: 80% 20%; margin-bottom: 5px; min-height: 70vh;}
