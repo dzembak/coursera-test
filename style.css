@@ -23,7 +23,7 @@ div.center,
 div.right {border-left: 1px solid #999;}
 
 nav > div {display: flex; align-items:center; justify-content: center;}
-nav > div > div {margin:.1em .5em; padding: 1em 2em; background-color: #444; text-align: center;}
+nav > div > div {margin:0 .1em; padding: 1em 2em; background-color: #444; text-align: center;}
 nav > div > div:hover {background-color: #666;}
 nav > div > div a {color:#fff;}
 
@@ -32,7 +32,7 @@ nav > div > div a {color:#fff;}
     article > div.content,
     footer > div, 
     header > div {grid-template-columns: 100%;}
-    nav > div > div {margin:0 .2em; padding: .1em .2em; grid-gap: 1px;}
+    nav > div > div {margin:0; padding: .1em .2em; grid-gap: 1px;}
 
     div.sidecol,
     div.center,
