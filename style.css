@@ -5,8 +5,11 @@ p {line-height: 1.5; color: #222;}
 
 footer > div, 
 header > div {display: grid; grid-template-columns: 20% 40% 40%; grid-gap: 5px; margin-bottom: 5px;}
+header > div > div {text-align: center; vertical-align: middle;}
 
 article > div.content {display: grid; grid-template-columns: 20% 80%; grid-gap: 5px; margin-bottom: 5px;}
 
-nav > div {display: flex; flex-wrap:wrap; margin:0 auto; }
-nav > div > div {margin:.5em 1em; padding: 1em 2em; background-color: #444; color: #fff;}
+nav > div {display: flex; flex-wrap:wrap; margin:0 auto; justify-items: center;}
+nav > div > div {margin:.1em .5em; padding: 1em 2em; background-color: #444; text-align: center;}
+nav > div > div:hover {background-color: #666;}
+nav > div > div a {color:#fff;}
