@@ -1,3 +1,5 @@
 html {background-color: white; color: black; font-size: 1em; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 h1 {color: #444; text-align: center;}
 p {line-height: 1.5; color: #222;}
+footer > div, 
+header > div.top {display: grid; grid-template-columns: 20% 40% 40%; grid-gap: 5px; margin-bottom: 5px;}
