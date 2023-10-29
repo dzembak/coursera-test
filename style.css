@@ -14,8 +14,10 @@ footer > div {border-top: 1px solid #666;}
 div.sidecol,
 footer > div > div {padding: .5em 1em;} 
 
-header > div > div {text-align: center; max-height: 5em; padding: 3% 0% 0% 30%;}
-div.logo img {max-height: 50px;} 
+header > div > div {text-align: center; max-height: 5em;}
+header > div > div > span {position: relative; top:30%;}
+
+div.logo img {max-height:50px; max-width:220px;} 
 
 article > div.content {display: grid; grid-template-columns: 80% 20%; margin-bottom: 5px; min-height: 70vh;}
 
@@ -26,7 +28,7 @@ div.center,
 div.right {border-left: 1px solid #999;}
 
 nav > div {display: flex; align-items:center; justify-content: center;}
-nav > div > div {margin:0 .1em; padding: .5em 1.5em; background-color: #444; text-align: center;}
+nav > div > div {border-left: 1px solid #fff; margin:0; padding: .25em 1em; background-color: #444; text-align: center;}
 nav > div > div:hover {background-color: #666;}
 nav > div > div a {color:#fff;}
 
@@ -35,6 +37,9 @@ nav > div > div a {color:#fff;}
     article > div.content,
     footer > div, 
     header > div {grid-template-columns: 100%;}
+    header > div > div {padding: 5px 0;}    
+    header > div > div > span {top:0;}
+
     nav > div > div {margin:0; padding: .1em;}
 
     div.sidecol,
