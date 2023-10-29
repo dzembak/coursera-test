@@ -4,8 +4,8 @@ html, body {margin: 0; padding: 0;}
 h1 {color: #444; text-align: center;}
 p {line-height: 1.5; color: #222;}
 
-header > div {display: grid; grid-template-columns: 20% 40% 40%; grid-gap: 5px;}
-footer > div {display: grid; grid-template-columns: 33% 34% 33%; grid-gap: 5px;}
+header > div {display: grid; grid-template-columns: 20% 40% 40%;}
+footer > div {display: grid; grid-template-columns: 33% 34% 33%;}
 
 header > div,
 nav > div {border-bottom: 1px solid #666;}
@@ -14,7 +14,7 @@ footer > div {border-top: 1px solid #666;}
 header > div > div {text-align: center; max-height: 5em;}
 div.logo img {max-height: 50px;} 
 
-article > div.content {display: grid; grid-template-columns: 80% 20%; grid-gap: 5px; margin-bottom: 5px; min-height: 70vh;}
+article > div.content {display: grid; grid-template-columns: 80% 20%; margin-bottom: 5px; min-height: 70vh;}
 
 div.main {padding: 1em 2em;}
 
@@ -32,7 +32,7 @@ nav > div > div a {color:#fff;}
     article > div.content,
     footer > div, 
     header > div {grid-template-columns: 100%;}
-    nav > div > div {margin:0; padding: .1em; grid-gap: 1px;}
+    nav > div > div {margin:0; padding: .1em;}
 
     div.sidecol,
     div.center,
