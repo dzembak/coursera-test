@@ -1,7 +1,7 @@
 html {background-color: white; color: black; font-size: 1em; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 html, body {margin: 0; padding: 0;}
 
-h1 {color: #444; text-align: center;}
+h1 {color:#444; text-align:center; border-top:1px solid #444; border-bottom:1px solid #444; padding:0.5em 0; margin:0;}
 p {line-height: 1.5; color: #222;}
 
 header > div {display: grid; grid-template-columns: 20% 40% 40%;}
@@ -27,10 +27,17 @@ div.sidecol,
 div.center,
 div.right {border-left: 1px solid #999;}
 
+/*
 nav > div {display: flex; align-items:center; justify-content: center;}
 nav > div > div {border-left: 1px solid #fff; margin:0; padding: .25em 1em; background-color: #444; text-align: center;}
 nav > div > div:hover {background-color: #666;}
 nav > div > div a {color:#fff;}
+*/
+
+nav > ul {text-align:center; list-style: none; margin: 0 auto; padding: 0;}
+nav > ul > li {background-color:#444; border-left:1px solid #fff; display:inline-flex; margin:0; padding:0; text-align:center;}
+nav > ul > li:hover {background-color: #666;}
+nav > ul > li a {color:#fff;margin:0 auto; padding: .25em .5em; }
 
 /* Adaptive */
 @media screen and (max-width:369px) {
@@ -40,7 +47,8 @@ nav > div > div a {color:#fff;}
     header > div > div {padding: 5px 0;}    
     header > div > div > span {top:0;}
 
-    nav > div > div {margin:0; padding: .1em;}
+/*    nav > div > div {margin:0; padding: .1em;}    */
+    nav > ul > li a {margin:0; padding: .1em;}
 
     div.sidecol,
     div.center,
