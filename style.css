@@ -39,6 +39,10 @@ nav > ul > li {background-color:#444; border-left:1px solid #fff; display:inline
 nav > ul > li:hover {background-color: #666;}
 nav > ul > li a {color:#fff;margin:0 auto; padding: .25em .5em; }
 
+.dritten {color:aqua;}
+.fuenften {color:aquamarine;}
+.dritten.fuenften {color:orchid}
+
 /* Adaptive */
 @media screen and (max-width:369px) {
     article > div.content,
