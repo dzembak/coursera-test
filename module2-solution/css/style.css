@@ -1,0 +1,69 @@
+* {box-sizing:border-box;}
+
+html {background-color: white; color: black; font-size: 1em; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+html, body {margin: 0; padding: 0;}
+
+h1 {color:#444; text-align:center; border-top:1px solid #444; border-bottom:1px solid #444; padding:0.5em 0; margin:0;}
+p {line-height: 1.5; color: #222;}
+
+header > div {display: grid; grid-template-columns: 20% 40% 40%;}
+footer > div {display: grid; grid-template-columns: 33% 34% 33%;}
+
+header > div,
+nav > div {border-bottom: 1px solid #666;}
+footer > div {border-top: 1px solid #666;} 
+
+div.sidecol,
+footer > div > div {padding: .5em 1em;} 
+
+header > div > div {text-align: center; max-height: 5em;}
+header > div > div > span {position: relative; top:30%;}
+
+div.logo img {max-height:50px; max-width:220px;} 
+
+article > div.content {display: grid; grid-template-columns: 80% 20%; margin-bottom: 5px; min-height: 70vh;}
+
+div.main {padding: 1em 2em;}
+
+div.sidecol,
+div.center,
+div.right {border-left: 1px solid #999;}
+
+/*
+nav > div {display: flex; align-items:center; justify-content: center;}
+nav > div > div {border-left: 1px solid #fff; margin:0; padding: .25em 1em; background-color: #444; text-align: center;}
+nav > div > div:hover {background-color: #666;}
+nav > div > div a {color:#fff;}
+*/
+
+nav {background-color:#999;margin:0;padding:0;}
+nav > ul {text-align:center; list-style: none; margin: 0 auto; padding: 0;}
+nav > ul > li {background-color:#444; border-left:1px solid #fff; display:inline-flex; margin:0; padding:0; text-align:center;}
+nav > ul > li:hover {background-color: #666;}
+nav > ul > li a {color:#fff;margin:0 auto; padding: .25em .5em; }
+
+.dritten {color:aqua;background-color: darkred;}
+.fuenften {color:aquamarine;background-color:darkmagenta;}
+.dritten.fuenften {color:orchid;background-color:darkblue;}
+
+/* Adaptive */
+@media screen and (max-width:369px) {
+    div.logo {text-align:center;}
+    
+    article > div.content,
+    footer > div, 
+    header > div {grid-template-columns: 100%;}
+    header > div > div {padding: 5px 0;}    
+    header > div > div > span {top:0;}
+
+    nav {position:fixed; bottom: 0; width:100%;}
+    footer {margin-bottom:20px;}
+    nav > ul > li a {margin:0; padding: .1em;}
+
+    div.sidecol,
+    div.left,
+    div.center,
+    div.right {border-left:0 none; text-align:center;}
+
+    div.main {padding: .5em 1em;}
+}
